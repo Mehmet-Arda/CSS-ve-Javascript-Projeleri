@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Oto Galeri Projesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url(css/all.css);
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="margin-top:20px;">
+    
+        <div class="card row">
+            <div class="card-header">Araç Projesi</div>
+
+            <div class="card-body">
+
+                <form id="car-form" name="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6 mb-3">
+                            <input type="text" id="title" name="title" class="form-control" placeholder="Araç İsmi">
+                        </div>
+
+                        <div class="form-group col-md-6 mb-3">
+                            <input type="text" id="price" name="price" class="form-control" placeholder="Fiyat Bilgisi">
+                        </div>
+
+
+                        <div class="form-group col-md-6 mb-3">
+                            <input type="text" id="url" name="url" class="form-control" placeholder="Araç Görseli Linki">
+                        </div>
+
+                        <button type="submit" class="btn btn-danger">Araç Ekleyin</button>
+
+
+                    </div>
+                </form>
+
+                <hr>
+
+            </div>
+
+
+
+            <div class="card-body">
+                <hr>
+                <h5 class="card-title" id="cars-title">Araçlar</h5>
+
+                <hr>
+
+                <table class="table table-dark table-striped">
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Araç Görseli</th>
+                            <th scope="col">Araç Bilgisi</th>
+                            <th scope="col">Fiyat Bilgisi</th>
+                            <th scope="col"></th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="cars">
+                        
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <a href="#" id="clear-cars" class="btn  btn-secondary">Tüm Araçları Temizleyin</a>
+            </div>
+
+
+        </div>
+    </div>
+   
+
+
+    <script src="js/bootstap/bootstrap.bundle.min.js"></script>
+
+    <script src="js/custom/car.js"></script>
+    <script src="js/custom/storage.js"></script>
+    <script src="js/custom/ui.js"></script>
+
+    <script src="js/custom/project.js"></script>
+</body>
+
+</html>
